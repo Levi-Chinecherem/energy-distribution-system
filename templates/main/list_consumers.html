@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Consumers</h2>
+  <ul>
+    {% for consumer in consumers %}
+      <li>Name: {{ consumer.name }} - Email: {{ consumer.contact_email }}</li>
+    {% empty %}
+      <li>No consumers available.</li>
+    {% endfor %}
+  </ul>
+  <a href="{% url 'create_consumer' %}" class="btn btn-primary">Create New Consumer</a>
+</div>
+{% endblock %}

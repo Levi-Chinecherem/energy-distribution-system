@@ -1,0 +1,14 @@
+<!-- main/templates/main/consumption_list.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Energy Consumption List</h2>
+  <ul>
+    {% for consumption in consumptions %}
+      <li>{{ consumption.consumer.name }} - {{ consumption.product.name }} - {{ consumption.units_consumed }}</li>
+    {% empty %}
+      <li>No energy consumption records available.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Energy Products</h2>
+  <ul>
+    {% for product in products %}
+      <li>{{ product.name }} - {{ product.description }}</li>
+    {% empty %}
+      <li>No energy products available.</li>
+    {% endfor %}
+  </ul>
+  <a href="{% url 'create_energy_product' %}" class="btn btn-primary">Create New Product</a>
+</div>
+{% endblock %}

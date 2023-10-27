@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container mt-4">
+        <h5 class="card-title">Energy Report</h5>
+        <img src="{% static 'reports/energy_report.png' %}" alt="Energy Consumption by Product" class="img-fluid">
+    </div>
+{% endblock %}

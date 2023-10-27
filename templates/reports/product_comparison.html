@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header">
+            <h4>Product Comparison</h4>
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Total Consumption</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for product, consumption in sorted_products %}
+                    <tr>
+                        <td>{{ product }}</td>
+                        <td>{{ consumption.total_consumption }} units</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Energy Consumptions</h2>
+  <ul>
+    {% for consumption in consumptions %}
+      <li>Consumer: {{ consumption.consumer.name }} - Product: {{ consumption.product.name }} - Units Consumed: {{ consumption.units_consumed }}</li>
+    {% empty %}
+      <li>No energy consumptions available.</li>
+    {% endfor %}
+  </ul>
+  <a href="{% url 'create_energy_consumption' %}" class="btn btn-primary">Create New Consumption</a>
+</div>
+{% endblock %}
