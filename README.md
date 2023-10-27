@@ -3,9 +3,9 @@
 
 The **Energy Distribution Management System** is a digitalized system designed to efficiently manage energy distribution, including data processing, information storage, and decision-making support. It provides a comprehensive solution for tracking energy products, consumer data, and generating reports and insights.
 
-![Energy Consumption by Product](https://your-image-hosting-url.com/energy_report.png)
+![Energy Consumption by Product](https://github.com/Levi-Chinecherem/energy-distribution-system/blob/main/sample%20outputs/p5.png)
 
-![Monthly Consumption Trends](https://your-image-hosting-url.com/monthly_consumption.png)
+![Monthly Consumption Trends](https://github.com/Levi-Chinecherem/energy-distribution-system/blob/main/sample%20outputs/p6.png)
 
 ## Table of Contents
 
